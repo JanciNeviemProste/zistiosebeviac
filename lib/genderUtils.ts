@@ -3,12 +3,14 @@ export type Gender = 'male' | 'female';
 /**
  * Upraví text otázky podľa zvoleného pohlavia
  * Nahradí výrazy ako rád/rada, milovaný/á atď.
+ * Nahradí osobné zámená na partnera/partnerku
  */
 export function applyGender(text: string, gender: Gender): string {
   if (gender === 'male') {
+    // Pre muža: partner → partnerka (ženský rod)
     return text
+      // Osobné rody
       .replace(/rád\/rada/gi, 'rád')
-      .replace(/Rád\/rada/g, 'Rád')
       .replace(/milovaný\/á/g, 'milovaný')
       .replace(/naplnený\/á/g, 'naplnený')
       .replace(/príťažlivý\/á/g, 'príťažlivý')
@@ -16,21 +18,24 @@ export function applyGender(text: string, gender: Gender): string {
       .replace(/pomohol\/la/g, 'pomohol')
       .replace(/požiadal\/a/g, 'požiadal')
       .replace(/rozhodol\/la/g, 'rozhodol')
-      .replace(/Som rád\/rada/g, 'Som rád')
-      .replace(/som rád\/rada/g, 'som rád')
+      .replace(/som rád\/rada/gi, 'som rád')
       .replace(/takého\/takú aký\/aká/g, 'takého aký')
       .replace(/takého\/takú/g, 'takého')
       .replace(/aký\/aká/g, 'aký')
-      .replace(/bezpečne/g, 'bezpečne')
       .replace(/urobil\/la/g, 'urobil')
       .replace(/vyrobil\/la/g, 'vyrobil')
-      .replace(/vyrobíš/g, 'vyrobíš')
       .replace(/sama\/sám/g, 'sám')
-      .replace(/Sama\/sám/g, 'Sám');
+      // Zámená → partnerka (ženský rod pre muža)
+      .replace(/od partnera\/partnerky/g, 'od partnerky')
+      .replace(/s partnerom\/partnerkou/g, 's partnerkou')
+      .replace(/partner\/ka/g, 'partnerka')
+      .replace(/partnerom\/partnerkou/g, 'partnerkou')
+      .replace(/partnera\/partnerky/g, 'partnerky');
   } else {
+    // Pre ženu: partner → partner (mužský rod)
     return text
+      // Osobné rody
       .replace(/rád\/rada/gi, 'rada')
-      .replace(/Rád\/rada/g, 'Rada')
       .replace(/milovaný\/á/g, 'milovaná')
       .replace(/naplnený\/á/g, 'naplnená')
       .replace(/príťažlivý\/á/g, 'príťažlivá')
@@ -38,16 +43,18 @@ export function applyGender(text: string, gender: Gender): string {
       .replace(/pomohol\/la/g, 'pomohla')
       .replace(/požiadal\/a/g, 'požiadala')
       .replace(/rozhodol\/la/g, 'rozhodla')
-      .replace(/Som rád\/rada/g, 'Som rada')
-      .replace(/som rád\/rada/g, 'som rada')
+      .replace(/som rád\/rada/gi, 'som rada')
       .replace(/takého\/takú aký\/aká/g, 'takú aká')
       .replace(/takého\/takú/g, 'takú')
       .replace(/aký\/aká/g, 'aká')
-      .replace(/bezpečne/g, 'bezpečne')
       .replace(/urobil\/la/g, 'urobila')
       .replace(/vyrobil\/la/g, 'vyrobila')
-      .replace(/vyrobíš/g, 'vyrobíš')
       .replace(/sama\/sám/g, 'sama')
-      .replace(/Sama\/sám/g, 'Sama');
+      // Zámená → partner (mužský rod pre ženu)
+      .replace(/od partnera\/partnerky/g, 'od partnera')
+      .replace(/s partnerom\/partnerkou/g, 's partnerom')
+      .replace(/partner\/ka/g, 'partner')
+      .replace(/partnerom\/partnerkou/g, 'partnerom')
+      .replace(/partnera\/partnerky/g, 'partnera');
   }
 }

@@ -1,334 +1,334 @@
 import { QuestionPair } from './types';
 
-// Pôvodné otázky z PDF "5 Jazykov lásky"
+// Otázky upravené na neutrálnu formu s partnerom/partnerkou
 export const questions: QuestionPair[] = [
   {
     id: 1,
     optionA: {
-      text: 'Rád/rada od teba počúvam a dostávam uisťujúce správy.',
+      text: 'rád/rada od partnera/partnerky počúvam a dostávam uisťujúce správy.',
       language: 'A'
     },
     optionB: {
-      text: 'Páči sa mi, keď ma objímeš.',
+      text: 'páči sa mi, keď partner/ka objíme.',
       language: 'E'
     }
   },
   {
     id: 2,
     optionA: {
-      text: 'Rád/rada s tebou trávim čas osamote.',
+      text: 'rád/rada s partnerom/partnerkou trávim čas osamote.',
       language: 'B'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď mi pomôžeš s niečím praktickým.',
+      text: 'cítim sa milovaný/á, keď partner/ka pomôže s niečím praktickým.',
       language: 'D'
     }
   },
   {
     id: 3,
     optionA: {
-      text: 'Páči sa mi, keď mi dávaš darčeky.',
+      text: 'páči sa mi, keď partner/ka dáva darčeky.',
       language: 'C'
     },
     optionB: {
-      text: 'Rád/rada s tebou chodím na dlhé prechádzky.',
+      text: 'rád/rada s partnerom/partnerkou chodím na dlhé prechádzky.',
       language: 'B'
     }
   },
   {
     id: 4,
     optionA: {
-      text: 'Cítim sa milovaný/á, keď robíš veci, aby si mi pomohol/la.',
+      text: 'cítim sa milovaný/á, keď partner/ka robí veci, aby pomohol/la.',
       language: 'D'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď ma objímaš alebo sa ma dotýkaš.',
+      text: 'cítim sa milovaný/á, keď partner/ka objíma alebo sa dotýka.',
       language: 'E'
     }
   },
   {
     id: 5,
     optionA: {
-      text: 'Cítim sa milovaný/á, keď ma držíš v náručí.',
+      text: 'cítim sa milovaný/á, keď partner/ka drží v náručí.',
       language: 'E'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď od teba dostanem darček.',
+      text: 'cítim sa milovaný/á, keď od partnera/partnerky dostanem darček.',
       language: 'C'
     }
   },
   {
     id: 6,
     optionA: {
-      text: 'Rád/rada s tebou chodím na výlety.',
+      text: 'rád/rada s partnerom/partnerkou chodím na výlety.',
       language: 'B'
     },
     optionB: {
-      text: 'Rád/rada sa s tebou držím za ruky.',
+      text: 'rád/rada sa s partnerom/partnerkou držím za ruky.',
       language: 'E'
     }
   },
   {
     id: 7,
     optionA: {
-      text: 'Cítim sa milovaný/á, keď viem, že si ma všímaš.',
+      text: 'cítim sa milovaný/á, keď viem, že partner/ka si všíma.',
       language: 'A'
     },
     optionB: {
-      text: 'Viditeľné symboly lásky (dary) sú pre mňa veľmi dôležité.',
+      text: 'viditeľné symboly lásky (dary) sú veľmi dôležité.',
       language: 'C'
     }
   },
   {
     id: 8,
     optionA: {
-      text: 'Rád sedím blízko pri tebe.',
+      text: 'rád sedím blízko pri partnerovi/partnerke.',
       language: 'E'
     },
     optionB: {
-      text: 'Páči sa mi, keď mi povieš, že som príťažlivý/á.',
+      text: 'páči sa mi, keď partner/ka povie, že som príťažlivý/á.',
       language: 'A'
     }
   },
   {
     id: 9,
     optionA: {
-      text: 'Rád/rada s tebou trávim čas.',
+      text: 'rád/rada s partnerom/partnerkou trávim čas.',
       language: 'B'
     },
     optionB: {
-      text: 'Rád/rada od teba dostávam malé darčeky.',
+      text: 'rád/rada od partnera/partnerky dostávam malé darčeky.',
       language: 'C'
     }
   },
   {
     id: 10,
     optionA: {
-      text: 'Viem, že ma miluješ, keď mi pomáhaš.',
+      text: 'viem, že partner/ka miluje, keď pomáha.',
       language: 'D'
     },
     optionB: {
-      text: 'Tvoje slová, že ma prijímaš takého/takú aký/aká som, sú pre mňa dôležité.',
+      text: 'slová partnera/partnerky, že prijíma takého/takú aký/aká som, sú dôležité.',
       language: 'A'
     }
   },
   {
     id: 11,
     optionA: {
-      text: 'Som rád/rada, keď niečo spolu robíme.',
+      text: 'som rád/rada, keď niečo spolu robíme.',
       language: 'B'
     },
     optionB: {
-      text: 'Mám rád/rada láskavé slová, ktoré mi hovoríš.',
+      text: 'mám rád/rada láskavé slová, ktoré partner/ka hovorí.',
       language: 'A'
     }
   },
   {
     id: 12,
     optionA: {
-      text: 'Cítim sa naplnený/á, keď sa objímeme.',
+      text: 'cítim sa naplnený/á, keď sa objímeme.',
       language: 'E'
     },
     optionB: {
-      text: 'To, čo robíš, ma ovplyvňuje viac ako to, čo hovoríš.',
+      text: 'to, čo partner/ka robí, ovplyvňuje viac ako to, čo hovorí.',
       language: 'D'
     }
   },
   {
     id: 13,
     optionA: {
-      text: 'Vážim si tvoju chválu a snažím sa vyhnúť tvojej kritike.',
+      text: 'vážim si chválu partnera/partnerky a snažím sa vyhnúť kritike.',
       language: 'A'
     },
     optionB: {
-      text: 'Niekoľko lacnejších darčekov pre mňa znamená viac ako jeden veľký drahý dar.',
+      text: 'niekoľko lacnejších darčekov znamená viac ako jeden veľký drahý dar.',
       language: 'C'
     }
   },
   {
     id: 14,
     optionA: {
-      text: 'Cítim sa k tebe bližšie, keď sa ma dotkneš.',
+      text: 'cítim sa bližšie, keď sa partner/ka dotkne.',
       language: 'E'
     },
     optionB: {
-      text: 'Cítim tvoju blízkosť, keď sa spolu rozprávame alebo niečo robíme.',
+      text: 'cítim blízkosť partnera/partnerky, keď sa spolu rozprávame alebo niečo robíme.',
       language: 'B'
     }
   },
   {
     id: 15,
     optionA: {
-      text: 'Páči sa mi, keď pochváliš moje úspechy.',
+      text: 'páči sa mi, keď partner/ka pochváli moje úspechy.',
       language: 'A'
     },
     optionB: {
-      text: 'Viem, že ma miluješ, keď pre mňa robíš veci, ktoré ťa nebavia.',
+      text: 'viem, že partner/ka miluje, keď robí veci, ktoré ho/ju nebavia.',
       language: 'D'
     }
   },
   {
     id: 16,
     optionA: {
-      text: 'Som rád/rada, keď sa ma dotkneš, keď prechádzaš okolo.',
+      text: 'som rád/rada, keď sa partner/ka dotkne, keď prechádza okolo.',
       language: 'E'
     },
     optionB: {
-      text: 'Mám rád, keď ma súhlasne počúvaš.',
+      text: 'mám rád, keď partner/ka súhlasne počúva.',
       language: 'B'
     }
   },
   {
     id: 17,
     optionA: {
-      text: 'Veľmi sa mi páči, keď od teba dostávam darčeky.',
+      text: 'veľmi sa páči, keď od partnera/partnerky dostávam darčeky.',
       language: 'C'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď mi pomáhaš s mojimi plánmi projektov v domácnosti.',
+      text: 'cítim sa milovaný/á, keď partner/ka pomáha s mojimi plánmi projektov v domácnosti.',
       language: 'D'
     }
   },
   {
     id: 18,
     optionA: {
-      text: 'Mám rád/rada, keď dávaš komplimenty môjmu vzhľadu.',
+      text: 'mám rád/rada, keď partner/ka dáva komplimenty môjmu vzhľadu.',
       language: 'A'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď si nájdeš čas na pochopenie mojich pocitov.',
+      text: 'cítim sa milovaný/á, keď partner/ka nájde čas na pochopenie mojich pocitov.',
       language: 'B'
     }
   },
   {
     id: 19,
     optionA: {
-      text: 'Cítim sa bezpečne, keď sa ma dotýkaš.',
+      text: 'cítim sa bezpečne, keď sa partner/ka dotýka.',
       language: 'E'
     },
     optionB: {
-      text: 'Vďaka tvojej ochote niečo pre mňa vybaviť, sa cítim milovaný.',
+      text: 'vďaka ochote partnera/partnerky niečo vybaviť, sa cítim milovaný.',
       language: 'D'
     }
   },
   {
     id: 20,
     optionA: {
-      text: 'Vážim si veľa vecí, ktoré pre mňa robíš.',
+      text: 'vážim si veľa vecí, ktoré partner/ka robí.',
       language: 'D'
     },
     optionB: {
-      text: 'Rád/rada dostávam darčeky, ktoré sama/sám vyrobíš.',
+      text: 'rád/rada dostávam darčeky, ktoré partner/ka sama/sám vyrobil/la.',
       language: 'C'
     }
   },
   {
     id: 21,
     optionA: {
-      text: 'Veľmi si užívam pocit, keď mi venuješ svoju plnú pozornosť.',
+      text: 'veľmi si užívam pocit, keď partner/ka venuje svoju plnú pozornosť.',
       language: 'B'
     },
     optionB: {
-      text: 'Veľmi sa mi páči ten pocit, keď pre mňa niečo urobíš.',
+      text: 'veľmi sa páči ten pocit, keď partner/ka niečo urobí.',
       language: 'D'
     }
   },
   {
     id: 22,
     optionA: {
-      text: 'Cítim sa milovaný/á, keď oslávíš moje narodeniny tým, že mi dáš darček.',
+      text: 'cítim sa milovaný/á, keď partner/ka oslávi moje narodeniny tým, že dá darček.',
       language: 'C'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď oslávíš moje narodeniny zmysluplným želaním (písaným alebo hovoreným).',
+      text: 'cítim sa milovaný/á, keď partner/ka oslávi moje narodeniny zmysluplným želaním (písaným alebo hovoreným).',
       language: 'A'
     }
   },
   {
     id: 23,
     optionA: {
-      text: 'Cítim sa milovaný/á, keď mi pomáhaš s domácimi prácami.',
+      text: 'cítim sa milovaný/á, keď partner/ka pomáha s domácimi prácami.',
       language: 'D'
     },
     optionB: {
-      text: 'Viem, že na mňa myslíš, keď mi dávaš darček.',
+      text: 'viem, že partner/ka myslí, keď dáva darček.',
       language: 'C'
     }
   },
   {
     id: 24,
     optionA: {
-      text: 'Vážim si, keď mi naše špeciálne dni pripomenieš darčekom.',
+      text: 'vážim si, keď partner/ka pripomenie naše špeciálne dni darčekom.',
       language: 'C'
     },
     optionB: {
-      text: 'Oceňujem, keď trpezlivo počúvaš a neprerušuješ ma.',
+      text: 'oceňujem, keď partner/ka trpezlivo počúva a neprerušuje.',
       language: 'B'
     }
   },
   {
     id: 25,
     optionA: {
-      text: 'Bavia ma dlhé výlety s tebou.',
+      text: 'bavia dlhé výlety s partnerom/partnerkou.',
       language: 'B'
     },
     optionB: {
-      text: 'Rád/rada vidím, že ti na mne záleží dostatočne na to, aby si mi pomohol/la s mojimi každodennými úlohami.',
+      text: 'rád/rada vidím, že partnerovi/partnerke záleží dostatočne na to, aby pomohol/la s mojimi každodennými úlohami.',
       language: 'D'
     }
   },
   {
     id: 26,
     optionA: {
-      text: 'Nečakaný bozk vo mne vyvoláva pocit, že som milovaný/á.',
+      text: 'nečakaný bozk vyvoláva pocit, že som milovaný/á.',
       language: 'E'
     },
     optionB: {
-      text: 'Keď mi dáš darček len tak, bez zjavného dôvodu, cítim sa milovaný/á.',
+      text: 'keď partner/ka dá darček len tak, bez zjavného dôvodu, cítim sa milovaný/á.',
       language: 'C'
     }
   },
   {
     id: 27,
     optionA: {
-      text: 'Rád/rada počúvam, že si ma vážiš.',
+      text: 'rád/rada počúvam, že partner/ka si váži.',
       language: 'A'
     },
     optionB: {
-      text: 'Mám rád/rada, keď na mňa hľadíš, keď sa rozprávame.',
+      text: 'mám rád/rada, keď partner/ka hľadí, keď sa rozprávame.',
       language: 'B'
     }
   },
   {
     id: 28,
     optionA: {
-      text: 'Tvoje dary sú pre mňa vždy špeciálne.',
+      text: 'dary partnera/partnerky sú vždy špeciálne.',
       language: 'C'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď ma pobozkáš.',
+      text: 'cítim sa milovaný/á, keď partner/ka pobozká.',
       language: 'E'
     }
   },
   {
     id: 29,
     optionA: {
-      text: 'Cítim sa milovaný/á, keď mi hovoríš, ako si ma vážiš.',
+      text: 'cítim sa milovaný/á, keď partner/ka hovorí, ako si váži.',
       language: 'A'
     },
     optionB: {
-      text: 'Cítim sa milovaný/á, keď s nadšením plníš úlohu, o ktorú som ťa požiadal/a.',
+      text: 'cítim sa milovaný/á, keď partner/ka s nadšením plní úlohu, o ktorú som požiadal/a.',
       language: 'D'
     }
   },
   {
     id: 30,
     optionA: {
-      text: 'Potrebujem, aby si ma každý deň objal/a.',
+      text: 'potrebujem, aby partner/ka každý deň objal/a.',
       language: 'E'
     },
     optionB: {
-      text: 'Každý deň potrebujem tvoje uisťujúce slová.',
+      text: 'každý deň potrebujem uisťujúce slová partnera/partnerky.',
       language: 'A'
     }
   }
