@@ -6,11 +6,11 @@ export default function Home() {
       <div className="card max-w-2xl w-full text-center fade-in">
         <div className="mb-8">
           <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            5 Jazykov Lásky
+            Zisti o sebe viac
           </h1>
-          <div className="text-6xl mb-6">💕</div>
+          <div className="text-6xl mb-6">🤝</div>
           <p className="text-lg text-gray-700 mb-2">
-            Objavte váš primárny spôsob vyjadrenia a prijímania lásky
+            Objavte, ako najlepšie vyjadrujete, že vám na niekom záleží
           </p>
         </div>
 
@@ -29,22 +29,22 @@ export default function Home() {
             </li>
             <li className="flex items-start">
               <span className="mr-2">🎯</span>
-              <span>Na konci zistíte váš dominantný jazyk lásky</span>
+              <span>Na konci zistíte váš primárny spôsob vyjadrenia starostlivosti</span>
             </li>
           </ul>
         </div>
 
         <div className="mb-8">
           <h3 className="font-semibold text-lg mb-3 text-gray-800">
-            5 jazykov lásky:
+            5 spôsobov vyjadrovania:
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
             {[
-              { icon: '💬', name: 'Slová uistenia' },
-              { icon: '⏰', name: 'Pozornosť' },
-              { icon: '🎁', name: 'Dary' },
-              { icon: '🤝', name: 'Akt služby' },
-              { icon: '🤗', name: 'Fyzický dotyk' }
+              { icon: '💬', name: 'Slová povzbudenia' },
+              { icon: '⏰', name: 'Spoločný čas' },
+              { icon: '🎁', name: 'Darčeky' },
+              { icon: '🤝', name: 'Pomoc' },
+              { icon: '🤗', name: 'Fyzický kontakt' }
             ].map((lang, index) => (
               <div
                 key={index}

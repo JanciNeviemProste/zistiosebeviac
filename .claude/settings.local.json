@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInicializácia projektu: 5 Jazykov Lásky webová aplikácia\n\n- Next.js 14 s TypeScript a Tailwind CSS\n- 30 interaktívnych otázok z pôvodného testu\n- Responzívny dizajn s capybara pozadím\n- Automatické vyhodnotenie výsledkov\n- Pripraven\\u00e9 pre deployment na Vercel\n\n🦫 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)"
     ],
     "deny": [],
     "ask": []

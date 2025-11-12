@@ -1,24 +1,24 @@
-# 5 Jazykov Lásky - Webová Aplikácia
+# Zisti o sebe viac - Webová Aplikácia
 
-Interaktívna webová aplikácia pre testovanie 5 jazykov lásky podľa Gary Chapmana. Aplikácia je plne responzívna s príjemným dizajnom a capybara pozadím.
+Interaktívna webová aplikácia na zistenie, ako najlepšie vyjadrujete starostlivosť o druhých. Test vychádza z konceptu 5 jazykov lásky Gary Chapmana, adaptovaný pre všeobecné vzťahy (priateľstvá, rodina, blízki ľudia). Aplikácia je plne responzívna s príjemným dizajnom a capybara pozadím.
 
 ## Funkcie
 
 - 30 interaktívnych otázok
 - Progress bar na sledovanie pokroku
 - Automatické vyhodnotenie výsledkov
-- Zobrazenie dominantného jazyka lásky
-- Percentuálne rozloženie všetkých 5 jazykov
+- Zobrazenie dominantného spôsobu vyjadrovania
+- Percentuálne rozloženie všetkých 5 spôsobov
 - Plne responzívny dizajn (mobile-first)
 - Jemný capybara pattern na pozadí
 
-## 5 Jazykov Lásky
+## 5 Spôsobov vyjadrovania starostlivosti
 
-1. **Slová uistenia** 💬 - Pochvaly a povzbudzujúce slová
-2. **Pozornosť** ⏰ - Kvalitný čas strávený spolu
-3. **Prijímanie darov** 🎁 - Darčeky ako symboly lásky
-4. **Akt služby** 🤝 - Pomoc s praktickými vecami
-5. **Fyzický dotyk** 🤗 - Objatia a fyzická blízkosť
+1. **Slová povzbudenia** 💬 - Pochvaly a povzbudzujúce slová
+2. **Spoločný čas** ⏰ - Kvalitný čas strávený spolu
+3. **Darčeky a pozornosti** 🎁 - Darčeky ako symboly starostlivosti
+4. **Pomoc a podpora** 🤝 - Pomoc s praktickými vecami
+5. **Fyzický kontakt** 🤗 - Objatia a priateľský dotyk
 
 ## Technológie
 
@@ -91,7 +91,7 @@ test5foriem/
 ├── lib/
 │   ├── types.ts            # TypeScript typy
 │   ├── questions.ts        # Databáza 30 otázok
-│   └── languageDescriptions.ts  # Popisy jazykov lásky
+│   └── languageDescriptions.ts  # Popisy spôsobov vyjadrovania
 ├── package.json
 ├── tsconfig.json
 ├── tailwind.config.js
@@ -111,9 +111,9 @@ Tento projekt je vytvorený pre vzdelávacie účely.
 
 ## Autor
 
-Test vychádza z knihy "5 jazykov lásky" od Gary Chapmana.
+Test vychádza z konceptu "5 jazykov lásky" od Gary Chapmana, adaptovaný pre všeobecné vzťahy.
 Webová implementácia: [Vaše meno]
 
 ---
 
-Užite si objavovanie vášho jazyka lásky! 💕
+Užite si objavovanie seba! ✨

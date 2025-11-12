@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: '5 Jazykov Lásky - Test',
-  description: 'Zisti, aký je tvoj hlavný jazyk lásky',
+  title: 'Zisti o sebe viac - Test osobnosti',
+  description: 'Objavte, ako najlepšie vyjadrujete, že vám na niekom záleží',
 }
 
 export default function RootLayout({

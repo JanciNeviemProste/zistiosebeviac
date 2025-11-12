@@ -2,28 +2,28 @@ import { LoveLanguage, LanguageInfo } from './types';
 
 export const languageDescriptions: Record<LoveLanguage, LanguageInfo> = {
   A: {
-    name: 'Slová uistenia',
-    description: 'Pre teba sú najdôležitejšie slovné vyjadrenia lásky, komplimenty a povzbudzujúce slová. Pochvala a uznanie ťa napĺňajú energiou a cítiš sa milovaný/á, keď ti partner/ka povie, ako veľmi ťa má rád/rada.',
+    name: 'Slová povzbudenia',
+    description: 'Pre teba sú najdôležitejšie slovné vyjadrenia, komplimenty a povzbudzujúce slová. Pochvala a uznanie ťa napĺňajú energiou a cítiš sa cenený/á, keď ti niekto povie niečo pekné alebo ocení tvoje úspechy.',
     icon: '💬'
   },
   B: {
-    name: 'Pozornosť',
-    description: 'Túžiš po nedelenom čase strávenom s milovanou osobou. Pre teba nie je dôležité, čo robíte, ale že to robíte spolu. Kvalitný čas, nerozptýlená pozornosť a spoločné zážitky sú pre teba najcennejšie.',
+    name: 'Spoločný čas',
+    description: 'Túžiš po kvalitnom čase strávenom s blízkymi ľuďmi. Pre teba nie je dôležité, čo robíte, ale že to robíte spolu. Nedelená pozornosť a spoločné zážitky sú pre teba najcennejšie.',
     icon: '⏰'
   },
   C: {
-    name: 'Prijímanie darov',
-    description: 'Dary sú pre teba viditeľnými symbolmi lásky. Nejde o materiálnu hodnotu, ale o to, že si sa rozhodol/la myslieť na teba. Každý darček, veľký či malý, je pre teba dôkazom, že na teba niekto myslí.',
+    name: 'Darčeky a pozornosti',
+    description: 'Dary a malé pozornosti sú pre teba viditeľnými symbolmi starostlivosti. Nejde o materiálnu hodnotu, ale o to, že niekto myslel na teba. Každý darček ti pripomenie, že si pre niekoho dôležitý/á.',
     icon: '🎁'
   },
   D: {
-    name: 'Akt služby',
-    description: 'Cítiš sa milovaný/á, keď ti niekto pomôže s praktickými vecami. Keď ti partner/ka uľahčí život tým, že ti pomôže s úlohami alebo niečo pre teba urobí, je to pre teba najvýraznejším prejavom lásky.',
+    name: 'Pomoc a podpora',
+    description: 'Cítiš sa cenený/á, keď ti niekto pomôže s praktickými vecami. Keď ti blízka osoba uľahčí život tým, že ti pomôže s úlohami alebo niečo pre teba vybaví, je to pre teba najvýraznejší prejav starostlivosti.',
     icon: '🤝'
   },
   E: {
-    name: 'Fyzický dotyk',
-    description: 'Fyzická blízkosť, objatia, bozky a držanie sa za ruky sú pre teba nevyhnutné. Cítiš sa milovaný/á cez fyzický kontakt a dotyk je pre teba najsilnejším prejavom emocionálneho spojenia.',
+    name: 'Fyzický kontakt',
+    description: 'Fyzická blízkosť, objatia a priateľský dotyk sú pre teba dôležité. Cítiš sa dobre cez fyzický kontakt - či už je to objatie, pohladenie po pleci alebo priateľský dotyk ruky.',
     icon: '🤗'
   }
 };

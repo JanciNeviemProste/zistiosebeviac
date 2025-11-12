@@ -48,7 +48,7 @@ export default function ResultsPage() {
             Tvoje výsledky
           </h1>
           <p className="text-gray-600">
-            Tvoj primárny jazyk lásky je:
+            Tvoj primárny spôsob vyjadrenia starostlivosti:
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function ResultsPage() {
         {/* All Results */}
         <div className="mb-8">
           <h3 className="text-xl font-semibold text-gray-800 mb-4 text-center">
-            Rozloženie všetkých jazykov lásky
+            Rozloženie všetkých spôsobov
           </h3>
           <div className="space-y-4">
             {sortedResults.map(([language, score]) => {
@@ -109,10 +109,10 @@ export default function ResultsPage() {
             💡 Čo to pre teba znamená?
           </h3>
           <p className="text-gray-700 leading-relaxed">
-            Tvoj primárny jazyk lásky ukazuje, ako sa cítiš najviac milovaný/á.
-            Je však dôležité poznať aj jazyky lásky tvojho partnera/partnerky,
-            aby ste sa mohli vzájomne lepšie rozumieť a podporovať. Každý človek
-            má svoju vlastnú kombináciu jazykov lásky.
+            Tvoj výsledok ukazuje, akým spôsobom najradšej vyjadrujete, že vám na niekom záleží.
+            Je však dôležité vedieť, že ľudia okolo teba môžu mať iné preferencie, takže poznanie
+            týchto rozdielov vám pomôže lepšie sa vzájomne chápať. Každý človek má svoju vlastnú
+            kombináciu spôsobov vyjadrovania starostlivosti.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ export default function ResultsPage() {
         {/* Share Section */}
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500">
-            Zdieľaj tento test so svojimi blízkymi a objavte spolu vaše jazyky lásky! 💕
+            Zdieľaj tento test so svojimi priateľmi a zistite viac o sebe navzájom! ✨
           </p>
         </div>
       </div>
