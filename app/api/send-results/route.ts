@@ -3,8 +3,6 @@ import { Resend } from 'resend';
 import { TestResults } from '@/lib/types';
 import { languageDescriptions } from '@/lib/languageDescriptions';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   try {
     const { results, gender } = await request.json();
@@ -15,6 +13,17 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    // Check if API key is configured
+    if (!process.env.RESEND_API_KEY) {
+      console.warn('RESEND_API_KEY is not configured. Email will not be sent.');
+      return NextResponse.json(
+        { success: false, message: 'Email not configured' },
+        { status: 200 }
+      );
+    }
+
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Find dominant language
     const sortedResults = (Object.entries(results) as [string, number][])
