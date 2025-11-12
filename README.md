@@ -26,6 +26,16 @@ Interaktívna webová aplikácia na zistenie, ako najlepšie vyjadrujete starost
 - **TypeScript** - Type safety
 - **Tailwind CSS** - Styling
 - **React Hooks** - State management
+- **Resend** - E-mailové notifikácie
+
+## E-mailové notifikácie 📧
+
+Aplikácia automaticky posiela výsledky testov na e-mail. Pre nastavenie pozrite [EMAIL_SETUP.md](./EMAIL_SETUP.md).
+
+**Rýchle kroky:**
+1. Registruj sa na [resend.com](https://resend.com) (zdarma)
+2. Získaj API kľúč
+3. Nastav environment variables (pozri `.env.example`)
 
 ## Lokálne spustenie
 

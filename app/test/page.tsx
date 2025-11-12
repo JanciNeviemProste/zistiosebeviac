@@ -45,7 +45,7 @@ export default function TestPage() {
     setAnswers([...answers, language]);
   };
 
-  const handleNext = () => {
+  const handleNext = async () => {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setSelectedOption(null);
@@ -59,6 +59,18 @@ export default function TestPage() {
         E: answers.filter(a => a === 'E').length,
       };
       localStorage.setItem('loveLanguageResults', JSON.stringify(results));
+
+      // Send results to email (fire and forget - don't wait for response)
+      try {
+        fetch('/api/send-results', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ results, gender: userGender }),
+        }).catch(err => console.error('Failed to send email:', err));
+      } catch (error) {
+        console.error('Error sending results:', error);
+      }
+
       router.push('/results');
     }
   };
