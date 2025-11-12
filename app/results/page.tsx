@@ -129,13 +129,6 @@ export default function ResultsPage() {
             </button>
           </Link>
         </div>
-
-        {/* Share Section */}
-        <div className="mt-8 text-center">
-          <p className="text-sm text-gray-500">
-            Zdieľaj tento test so svojimi priateľmi a zistite viac o sebe navzájom! ✨
-          </p>
-        </div>
       </div>
     </main>
   );
