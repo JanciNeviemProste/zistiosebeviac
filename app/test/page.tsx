@@ -4,15 +4,31 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { questions } from '@/lib/questions';
 import { TestResults, LoveLanguage } from '@/lib/types';
+import { Gender, applyGender } from '@/lib/genderUtils';
 
 export default function TestPage() {
   const router = useRouter();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<LoveLanguage[]>([]);
   const [selectedOption, setSelectedOption] = useState<'A' | 'B' | null>(null);
+  const [userGender, setUserGender] = useState<Gender | null>(null);
+
+  // Load gender from localStorage
+  useEffect(() => {
+    const savedGender = localStorage.getItem('userGender') as Gender | null;
+    if (!savedGender) {
+      router.push('/');
+      return;
+    }
+    setUserGender(savedGender);
+  }, [router]);
 
   const question = questions[currentQuestion];
   const progress = ((currentQuestion + 1) / questions.length) * 100;
+
+  // Apply gender to question texts
+  const questionTextA = userGender ? applyGender(question.optionA.text, userGender) : question.optionA.text;
+  const questionTextB = userGender ? applyGender(question.optionB.text, userGender) : question.optionB.text;
 
   useEffect(() => {
     if (selectedOption) {
@@ -55,6 +71,18 @@ export default function TestPage() {
     }
   };
 
+  // Show loading while gender is being loaded
+  if (!userGender) {
+    return (
+      <main className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
+          <p className="mt-4 text-gray-600">Načítavam test...</p>
+        </div>
+      </main>
+    );
+  }
+
   return (
     <main className="min-h-screen flex items-center justify-center p-4">
       <div className="card max-w-3xl w-full fade-in">
@@ -94,7 +122,7 @@ export default function TestPage() {
                   <span className="text-primary font-bold">A</span>
                 </div>
                 <p className="text-gray-800 flex-1">
-                  {question.optionA.text}
+                  {questionTextA}
                 </p>
               </div>
             </button>
@@ -110,7 +138,7 @@ export default function TestPage() {
                   <span className="text-primary font-bold">B</span>
                 </div>
                 <p className="text-gray-800 flex-1">
-                  {question.optionB.text}
+                  {questionTextB}
                 </p>
               </div>
             </button>

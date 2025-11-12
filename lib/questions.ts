@@ -1,5 +1,6 @@
 import { QuestionPair } from './types';
 
+// Pôvodné otázky z PDF "5 Jazykov lásky"
 export const questions: QuestionPair[] = [
   {
     id: 1,

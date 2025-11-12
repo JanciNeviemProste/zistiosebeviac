@@ -51,7 +51,14 @@ body {
 }
 
 .option-card {
-  @apply cursor-pointer transition-all duration-300 border-2 border-gray-200 hover:border-primary hover:shadow-md;
+  @apply cursor-pointer transition-all duration-300 border-2 border-gray-200;
+}
+
+/* Hover effect only on devices that support hover (not touch devices) */
+@media (hover: hover) and (pointer: fine) {
+  .option-card:hover {
+    @apply border-primary shadow-md;
+  }
 }
 
 .option-card.selected {

@@ -1,6 +1,20 @@
-import Link from 'next/link';
+'use client';
+
+import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import { Gender } from '@/lib/genderUtils';
 
 export default function Home() {
+  const router = useRouter();
+  const [selectedGender, setSelectedGender] = useState<Gender | null>(null);
+
+  const handleStartTest = () => {
+    if (selectedGender) {
+      localStorage.setItem('userGender', selectedGender);
+      router.push('/test');
+    }
+  };
+
   return (
     <main className="min-h-screen flex items-center justify-center p-4">
       <div className="card max-w-2xl w-full text-center fade-in">
@@ -57,12 +71,43 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="space-y-4">
-          <Link href="/test" className="block">
-            <button className="btn-primary w-full text-lg">
-              Začať test
+        {/* Gender Selection */}
+        <div className="mb-6">
+          <h3 className="font-semibold text-lg mb-4 text-gray-800">
+            Vyberte pohlavie:
+          </h3>
+          <div className="grid grid-cols-2 gap-4">
+            <button
+              onClick={() => setSelectedGender('male')}
+              className={`option-card p-6 rounded-xl transition-all duration-300 ${
+                selectedGender === 'male' ? 'selected' : ''
+              }`}
+            >
+              <div className="text-5xl mb-2">👨</div>
+              <div className="font-semibold text-gray-800">Muž</div>
             </button>
-          </Link>
+            <button
+              onClick={() => setSelectedGender('female')}
+              className={`option-card p-6 rounded-xl transition-all duration-300 ${
+                selectedGender === 'female' ? 'selected' : ''
+              }`}
+            >
+              <div className="text-5xl mb-2">👩</div>
+              <div className="font-semibold text-gray-800">Žena</div>
+            </button>
+          </div>
+        </div>
+
+        <div className="space-y-4">
+          <button
+            onClick={handleStartTest}
+            disabled={!selectedGender}
+            className={`btn-primary w-full text-lg ${
+              !selectedGender ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+          >
+            Začať test
+          </button>
           <p className="text-sm text-gray-500">
             Trvanie: cca 5 minút
           </p>
