@@ -1,14 +1,24 @@
 export type Gender = 'male' | 'female';
 
 /**
+ * Kapitalizuje prvé písmeno textu
+ */
+function capitalize(text: string): string {
+  if (!text) return text;
+  return text.charAt(0).toUpperCase() + text.slice(1);
+}
+
+/**
  * Upraví text otázky podľa zvoleného pohlavia
  * Nahradí výrazy ako rád/rada, milovaný/á atď.
  * Nahradí osobné zámená na partnera/partnerku
  */
 export function applyGender(text: string, gender: Gender): string {
+  let result: string;
+
   if (gender === 'male') {
     // Pre muža: partner → partnerka (ženský rod)
-    return text
+    result = text
       // Osobné rody
       .replace(/rád\/rada/gi, 'rád')
       .replace(/milovaný\/á/g, 'milovaný')
@@ -33,7 +43,7 @@ export function applyGender(text: string, gender: Gender): string {
       .replace(/partnera\/partnerky/g, 'partnerky');
   } else {
     // Pre ženu: partner → partner (mužský rod)
-    return text
+    result = text
       // Osobné rody
       .replace(/rád\/rada/gi, 'rada')
       .replace(/milovaný\/á/g, 'milovaná')
@@ -57,4 +67,7 @@ export function applyGender(text: string, gender: Gender): string {
       .replace(/partnerom\/partnerkou/g, 'partnerom')
       .replace(/partnera\/partnerky/g, 'partnera');
   }
+
+  // Vráť text s veľkým prvým písmenom
+  return capitalize(result);
 }
